@@ -16,3 +16,14 @@ ticktock
 **Select day of week:** `Sunday` <br />
 **Select time of day:** `8am to 9am` (this is when you'll get the email with the previous week's hours.  Make sure that at this time, UTC is still on the same day as your timezone, or else weird things will happen). <br />
 **Failure notification settings:** `Notify me immediately`
+
+## Sample Output
+
+>**2019-08-14:**<br />
+9:49 PM - 9:54 PM (test2)<br />
+**2019-08-18:**<br />
+9:03 PM - 9:04 PM (testing)<br />
+10:15 PM - 10:22 PM
+
+- If you enter something in the description field in Toggl, then it'll appear in parenthese after the time field.
+- There's no support for time ranges overlapping days.  The best bet is to split the range at midnight so it's on two separate days, or just don't work that late.
