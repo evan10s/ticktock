@@ -39,7 +39,7 @@ function wtHours() {
       if (parsed[i].description.trim().length) {
         description = " (" + parsed[i].description.trim() + ")";
       }
-      outputArr.push(_prettyTime(parsed[i].start) + " - " + _prettyTime(parsed[i].end) + description);
+      outputArr.push(_prettyTime(parsed[i].start) + "-" + _prettyTime(parsed[i].end) + description);
     }
     
     MailApp.sendEmail(YOUR_EMAIL, "Last Week's Extra Hours", "", {
